@@ -1,0 +1,62 @@
+/* ---------------------------
+        Google Font Start
+---------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+
+/* ---------------------------
+        Google Font End
+---------------------------- */
+
+
+/* ---------------------------
+    Universal COde Start
+---------------------------- */
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* ---------------------------
+    Universal COde End
+---------------------------- */
+
+
+/* ---------------------------
+        Body Default Start
+---------------------------- */
+
+h1,h2,h3{
+    font-family: 'Marcellus SC', serif;
+}
+
+html,
+body {
+    font-family: 'Arima', cursive;
+}
+
+/* ---------------------------
+        Body Default End
+---------------------------- */
+
+
+/* ---------------------------
+Color & FontSize Variant Start
+---------------------------- */
+
+/* ---------------------------
+ Color & FontSize Variant End
+---------------------------- */
+
+
+/* ---------------------------
+        Header Area Start
+---------------------------- */
+
+/* ---------------------------
+        Header Area End
+---------------------------- */
