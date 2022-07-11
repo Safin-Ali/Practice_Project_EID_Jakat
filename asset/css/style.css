@@ -33,22 +33,32 @@
 
 h1,h2,h3{
     font-family: 'Marcellus SC', serif;
-    color: var(--white01);
+    color: var(--black01);
 }
 
 a{
     font-family: 'Signika', sans-serif;
 }
+p{
+    font-size: var(--Fsize18);
+}
 
 html,
 body {
     font-family: 'Arima', cursive;
-    color: #fff;
+    color: var(--black01);
 }
 
 .container{
     width: 85%;
     margin: 0 auto;
+}
+
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
 }
 
 /* ---------------------------
@@ -68,6 +78,7 @@ Color & FontSize Variant Start
     --Fsize18: 18px;
     --MarginXauto: auto;
     --MarginY20: 20px;
+    --lightgrey: #707070; 
 }
 
 .common_anchor{
@@ -100,10 +111,11 @@ Color & FontSize Variant Start
     text-align: left;
 }
 .header_area h1{
-    font-size: var(--Fsize45);
+    font-size: var(--Fsize55);
+    color: var(--white01);
 }
 .header_area p{
-    font-size: var(--Fsize18);
+    color: var(--white01);
     margin: var(--MarginY20) var(--MarginXauto);
 }
 
@@ -133,7 +145,6 @@ article{
 .blog-post p{
     color: var(--black01);
     margin: var(--MarginY20) auto;
-    font-size: var(--Fsize18);
 }
 .blog-post:nth-child(2){
     flex-direction: row-reverse;
@@ -141,4 +152,56 @@ article{
 
 /* ---------------------------
         Article Area End
+---------------------------- */
+
+
+/* ---------------------------
+        Hero Area Start
+---------------------------- */
+
+.hero-content{
+    text-align: center;
+    padding: 0 200px;
+}
+.hero-content p{
+    margin: 10px 0;
+    color: var(--lightgrey);
+}
+
+.hero-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-box{
+    background: #FEF4F5;
+    width: 46%;
+    margin: 1%;
+    border-radius: 5px;
+    padding: 50px;
+    text-align: left;
+}
+.hero-box div > h1,p,img{
+    margin: 10px;
+}
+
+/* ---------------------------
+        Hero Area End
+---------------------------- */
+
+
+/* ---------------------------
+        Pray Area Start
+---------------------------- */
+
+.pray-area-flex{
+    display: flex;
+    margin: var(--MarginY20) auto;
+}
+.pray-area-flex img{
+    margin: 5px;
+}
+
+/* ---------------------------
+        Pray Area End
 ---------------------------- */
