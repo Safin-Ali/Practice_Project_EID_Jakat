@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
 
 /* ---------------------------
         Google Font End
@@ -14,7 +15,9 @@
     Universal COde Start
 ---------------------------- */
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -30,13 +33,38 @@
         Body Default Start
 ---------------------------- */
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-family: 'Marcellus SC', serif;
+    color: var(--black01);
+}
+
+a {
+    font-family: 'Signika', sans-serif;
+}
+
+p {
+    font-size: var(--Fsize18);
 }
 
 html,
 body {
     font-family: 'Arima', cursive;
+    color: var(--black01);
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
 }
 
 /* ---------------------------
@@ -48,6 +76,31 @@ body {
 Color & FontSize Variant Start
 ---------------------------- */
 
+:root {
+    --white01: #f1f1f1;
+    --black01: #121212;
+    --Fsize55: 55px;
+    --Fsize45: 45px;
+    --Fsize18: 18px;
+    --MarginXauto: auto;
+    --MarginY20: 20px;
+    --lightgrey: #707070;
+}
+
+.common_anchor {
+    color: var(--white01);
+    background: #E90081;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.common_anchor:hover {
+    background: #AA226D;
+    transition: 0.3s ease-in-out;
+}
+
 /* ---------------------------
  Color & FontSize Variant End
 ---------------------------- */
@@ -57,6 +110,182 @@ Color & FontSize Variant Start
         Header Area Start
 ---------------------------- */
 
+.header_area {
+    background: linear-gradient(to right, #131212, #13121200), url(../images/Header-BG.svg);
+    background-size: cover;
+    min-height: 570px;
+    padding: 150px 150px;
+    text-align: left;
+}
+
+.header_area h1 {
+    font-size: var(--Fsize55);
+    color: var(--white01);
+}
+
+.header_area p {
+    color: var(--white01);
+    margin: var(--MarginY20) var(--MarginXauto);
+}
+
 /* ---------------------------
         Header Area End
+---------------------------- */
+
+
+/* ---------------------------
+        Article Area Start
+---------------------------- */
+article {
+    margin: 50px auto !important;
+}
+
+.blog-post {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.blog-post div {
+    flex-basis: 50%;
+}
+
+.blog-post h1 {
+    font-size: var(--Fsize45);
+    color: var(--black01);
+}
+
+.blog-post p {
+    color: var(--black01);
+    margin: var(--MarginY20) auto;
+}
+
+.blog-post:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+/* ---------------------------
+        Article Area End
+---------------------------- */
+
+
+/* ---------------------------
+        Hero Area Start
+---------------------------- */
+
+.hero-content {
+    text-align: center;
+    padding: 0 200px;
+}
+
+.hero-content p {
+    margin: 10px 0;
+    color: var(--lightgrey);
+}
+
+.hero-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-box {
+    background: #FEF4F5;
+    width: 46%;
+    margin: 1%;
+    border-radius: 5px;
+    padding: 50px;
+    text-align: left;
+}
+
+.hero-box>div>.hero-box img,
+.hero-box h1,
+.hero-box p {
+    margin: 10px;
+    color: initial;
+}
+
+/* ---------------------------
+        Hero Area End
+---------------------------- */
+
+
+/* ---------------------------
+        Pray Area Start
+---------------------------- */
+
+.pray-area-flex {
+    display: flex;
+    margin: var(--MarginY20) auto;
+}
+
+.pray-area-flex img {
+    margin: 5px;
+}
+
+/* ---------------------------
+        Pray Area End
+---------------------------- */
+
+
+/* ---------------------------
+    Take Love Area Start
+---------------------------- */
+
+.take-love-area{
+    margin: 100px auto;
+}
+
+.take-love-box {
+    display: flex;
+    gap: 30px;
+}
+
+.take-love-box>div {
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.take-love-box>div>.take-love-box h1,
+.take-love-box p,
+.take-love-box a {
+    padding: 2px 25px;
+}
+.take-love-box h1{
+    padding: 0 25px;
+}
+.take-love-box a{
+    color: #ef233c;
+    text-decoration: underline;
+    font-size: var(--Fsize18);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------
+    Take Love Area End
+---------------------------- */
+
+
+/* ---------------------------
+        Footer Area Start
+---------------------------- */
+
+footer{
+    padding: 25px;
+    background: #0B0D17;
+}
+footer> h1,footer p{
+    text-align: center;
+}
+
+footer> h1{
+    font-size: 36px;
+    color: #ef233c;
+}
+footer> p{
+    font-size: 14px;
+    color: #707070;
+}
+/* ---------------------------
+        Footer Area End
 ---------------------------- */
