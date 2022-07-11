@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
 
 /* ---------------------------
         Google Font End
@@ -32,11 +33,22 @@
 
 h1,h2,h3{
     font-family: 'Marcellus SC', serif;
+    color: var(--white01);
+}
+
+a{
+    font-family: 'Signika', sans-serif;
 }
 
 html,
 body {
     font-family: 'Arima', cursive;
+    color: #fff;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
 }
 
 /* ---------------------------
@@ -48,6 +60,29 @@ body {
 Color & FontSize Variant Start
 ---------------------------- */
 
+:root{
+    --white01: #f1f1f1;
+    --black01: #121212;
+    --Fsize55: 55px;
+    --Fsize45: 45px;
+    --Fsize18: 18px;
+    --MarginXauto: auto;
+    --MarginY20: 20px;
+}
+
+.common_anchor{
+    color: var(--white01);
+    background: #E90081;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.common_anchor:hover{
+    background: #AA226D;
+    transition: 0.3s ease-in-out;
+}
+
 /* ---------------------------
  Color & FontSize Variant End
 ---------------------------- */
@@ -57,6 +92,53 @@ Color & FontSize Variant Start
         Header Area Start
 ---------------------------- */
 
+.header_area{
+    background: linear-gradient(to right, #131212,#13121200),url(../images/Header-BG.svg);
+    background-size: cover;
+    min-height: 570px;
+    padding: 150px 150px;
+    text-align: left;
+}
+.header_area h1{
+    font-size: var(--Fsize45);
+}
+.header_area p{
+    font-size: var(--Fsize18);
+    margin: var(--MarginY20) var(--MarginXauto);
+}
+
 /* ---------------------------
         Header Area End
+---------------------------- */
+
+
+/* ---------------------------
+        Article Area Start
+---------------------------- */
+article{
+    margin: 50px auto !important;
+}
+.blog-post{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.blog-post div{
+    flex-basis: 50%;
+}
+.blog-post h1{
+    font-size: var(--Fsize45);
+    color: var(--black01);
+}
+.blog-post p{
+    color: var(--black01);
+    margin: var(--MarginY20) auto;
+    font-size: var(--Fsize18);
+}
+.blog-post:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+/* ---------------------------
+        Article Area End
 ---------------------------- */
